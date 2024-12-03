@@ -6,7 +6,8 @@ RUN wget https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.
   mv nvim-linux64/lib/nvim /usr/lib/nvim && \
   mv nvim-linux64/share/nvim/ /usr/share/nvim && \
   rm -rf nvim-linux64 && \
-  rm nvim-linux64.tar.gz
+  rm nvim-linux64.tar.gz && \
+  echo 'alias vi="nvim"' >> ~/.bashrc
 
 RUN git clone https://github.com/Key5n/dotfiles-nix && \
   rm -rf ~/.config/ && \
