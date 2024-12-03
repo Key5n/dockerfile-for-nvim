@@ -29,4 +29,6 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
   install lazygit /usr/local/bin && \
   rm -f lazygit.tar.gz lazygit && \
   # lazydocker
-  curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+  curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash && \
+  # fd
+  apt install fd-find
